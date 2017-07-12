@@ -1,0 +1,14 @@
+{
+  "name": "CustomPage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Ruiz Posse",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanirp88/customPage.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}

@@ -1,0 +1,25 @@
+<div ng-repeat="who in whoWeAreDir.whoList">
+    <div class="text-container" ng-class="{'odd' : who.background == 'odd'}">
+        <h2 class="mt40 pt40 text-center">{{who.title}}</h2>
+        <div class="row center-margin">
+            <div ng-if="who.background == 'odd'">
+                <div class="display-inline text-center content-text">
+                    <p>{{who.description}}
+                    </p>
+                </div>
+                <div class="display-inline text-center">
+                    <img ng-src="{{who.imgSrc}}" alt="{{who.imgAlt}}" />
+                </div>
+            </div>
+            <div ng-if="who.background == 'white'">
+                <div class="display-inline text-center">
+                    <img ng-src="{{who.imgSrc}}" alt="{{who.imgAlt}}" />
+                </div>
+                <div class="display-inline text-center content-text">
+                    <p>{{who.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
